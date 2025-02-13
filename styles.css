@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #41b5d6;
+}
+.screen {
+    width: 80%;
+    height: 50px;
+    background-color: #ccc;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.seating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seats-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 10px;
+}
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.seat.booked {
+    background-color: red;
+    cursor: not-allowed;
+}
+.seat.selected {
+    background-color: green;
+}
+.info-panel {
+    margin-top: 20px;
+}
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.legend .seat {
+    width: 20px;
+    height: 20px;
+}
